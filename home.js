@@ -98,7 +98,7 @@ document.getElementById("fire-service-btn")
         const coinInnerTextNumber = coinInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
-            alert("📞 Calling Police Helpline Number 999...");
+            alert("📞 Calling Fire Service Number 999...");
         }
 
         if (coinInnerTextNumber < coins) {
@@ -130,7 +130,7 @@ document.getElementById("national-emergency-btn")
         const coinInnerTextNumber = coinInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
-            alert("📞 Calling Police Helpline Number 999...");
+            alert("📞 Calling National Emergency Number 999...");
         }
 
         if (coinInnerTextNumber < coins) {
@@ -152,5 +152,190 @@ document.getElementById("national-emergency-btn")
     })
 
 
+// Call btn main function (Ambulance services)
 
+document.getElementById("ambulance-btn")
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const coinBtn = document.getElementById("coin-btn");
+        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+
+        if (coinInnerTextNumber >= coins) {
+            alert("📞 Calling Ambulance Service 1994-999999...");
+        }
+
+        if (coinInnerTextNumber < coins) {
+            alert("❌ Insufficient coins! You need at least 20 coins to make a call.");
+            return;
+        }
+
+        const newAvilableCoin = coinInnerTextNumber - coins;
+        coinBtn.innerText = newAvilableCoin;
+
+        const data = {
+            name: "Ambulance Service",
+            num: "1994-999999",
+            date: new Date().toLocaleTimeString()
+        }
+
+        callHistoryData.push(data)
+        callHistory();
+    })
+
+
+// Call btn main function (Women and child health)
+
+document.getElementById("child-help-btn")
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const coinBtn = document.getElementById("coin-btn");
+        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+
+        if (coinInnerTextNumber >= coins) {
+            alert("📞 Calling Women & Child Helpline 109...");
+        }
+
+
+        if (coinInnerTextNumber < coins) {
+            alert("❌ Insufficient coins! You need at least 20 coins to make a call.");
+            return;
+        }
+
+        const newAvilableCoin = coinInnerTextNumber - coins;
+        coinBtn.innerText = newAvilableCoin;
+
+        const data = {
+            name: "Women & Child Helpline",
+            num: "109",
+            date: new Date().toLocaleTimeString()
+        }
+
+        callHistoryData.push(data)
+        callHistory();
+    })
+
+// Call btn main function (Anti-Corruptin)
+
+document.getElementById("corruption-btn")
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const coinBtn = document.getElementById("coin-btn");
+        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+
+        if (coinInnerTextNumber >= coins) {
+            alert("📞 Calling Anti-Corruption Helpline 106...");
+        }
+
+        if (coinInnerTextNumber < coins) {
+            alert("❌ Insufficient coins! You need at least 20 coins to make a call.");
+            return;
+        }
+
+        const newAvilableCoin = coinInnerTextNumber - coins;
+        coinBtn.innerText = newAvilableCoin;
+
+        const data = {
+            name: "Anti-Corruption Helpline",
+            num: "106",
+            date: new Date().toLocaleTimeString()
+        }
+
+        callHistoryData.push(data)
+        callHistory();
+    })
+
+// Call btn main function (Electricity helpline)
+
+document.getElementById("electricity-btn")
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const coinBtn = document.getElementById("coin-btn");
+        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+
+        if (coinInnerTextNumber >= coins) {
+            alert("📞 Calling Electricity Helpline 16216...");
+        }
+
+        if (coinInnerTextNumber < coins) {
+            alert("❌ Insufficient coins! You need at least 20 coins to make a call.");
+            return;
+        }
+
+        const newAvilableCoin = coinInnerTextNumber - coins;
+        coinBtn.innerText = newAvilableCoin;
+
+        const data = {
+            name: "Electricity Helpline",
+            num: "16216",
+            date: new Date().toLocaleTimeString()
+        }
+
+        callHistoryData.push(data)
+        callHistory();
+    })
+// Call btn main function (Brac Helpline)
+
+document.getElementById("brac-btn")
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const coinBtn = document.getElementById("coin-btn");
+        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+
+        if (coinInnerTextNumber >= coins) {
+            alert("📞 Calling Brac Helpline 16445...");
+        }
+
+        if (coinInnerTextNumber < coins) {
+            alert("❌ Insufficient coins! You need at least 20 coins to make a call.");
+            return;
+        }
+
+        const newAvilableCoin = coinInnerTextNumber - coins;
+        coinBtn.innerText = newAvilableCoin;
+
+        const data = {
+            name: "Brac Helpline",
+            num: "16445",
+            date: new Date().toLocaleTimeString()
+        }
+
+        callHistoryData.push(data)
+        callHistory();
+    })
+
+// Call btn main function (bangladesh railway helpline)
+
+document.getElementById("railway-help-btn")
+    .addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const coinBtn = document.getElementById("coin-btn");
+        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+
+        if (coinInnerTextNumber >= coins) {
+            alert("📞 Calling Bangladesh Railway Helpline 163...");
+        }
+
+        if (coinInnerTextNumber < coins) {
+            alert("❌ Insufficient coins! You need at least 20 coins to make a call.");
+            return;
+        }
+
+        const newAvilableCoin = coinInnerTextNumber - coins;
+        coinBtn.innerText = newAvilableCoin;
+
+        const data = {
+            name: "Bangladesh Railway Helpline",
+            num: "163",
+            date: new Date().toLocaleTimeString()
+        }
+
+        callHistoryData.push(data)
+        callHistory();
+    })
 
