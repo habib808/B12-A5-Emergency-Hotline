@@ -1,15 +1,15 @@
 const coins = 20;
+const heartBTnValue = 1;
+const copyBtnValue = 1;
+callHistoryData = [];
 
-callHistoryData = []
+//  innerText reUseAble function (global)
 
-// All cards call click function 
-//  Call btn reUseAble function (global)
-
-function coinInnerTextValue(id) {
-    const coinBtn = document.getElementById(id);
-    const coinInnerText = coinBtn.innerText;
-    const coinInnerTextNumber = parseInt(coinInnerText);
-    return coinInnerTextNumber;
+function elementInnerTextValue(id) {
+    const element = document.getElementById(id);
+    const elementInnerText = element.innerText;
+    const elementInnerTextNumber = parseInt(elementInnerText);
+    return elementInnerTextNumber;
 
 }
 
@@ -57,6 +57,24 @@ for (const callBtn of callBtns) {
 }
 // ----------------
 
+
+// heart click function 
+const heartBTns = document.getElementsByClassName("heart-btn");
+for (const heartBTn of heartBTns) {
+    heartBTn.addEventListener('click', function () {
+
+        const hearShowBtn = document.getElementById("heart-show-btn");
+        const heartInnerTextnumber = elementInnerTextValue("heart-show-btn")
+
+        const newAvilableHeart = heartInnerTextnumber + heartBTnValue;
+        hearShowBtn.innerText = newAvilableHeart;
+
+
+    })
+}
+
+// -----------------------------
+
 // Call btn main function (police help line)
 
 document.getElementById("police-call-btn")
@@ -64,7 +82,7 @@ document.getElementById("police-call-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Police Helpline Number 999...");
@@ -95,7 +113,7 @@ document.getElementById("fire-service-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Fire Service Number 999...");
@@ -127,7 +145,7 @@ document.getElementById("national-emergency-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling National Emergency Number 999...");
@@ -159,7 +177,7 @@ document.getElementById("ambulance-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Ambulance Service 1994-999999...");
@@ -191,7 +209,7 @@ document.getElementById("child-help-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Women & Child Helpline 109...");
@@ -223,7 +241,7 @@ document.getElementById("corruption-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Anti-Corruption Helpline 106...");
@@ -254,7 +272,7 @@ document.getElementById("electricity-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Electricity Helpline 16216...");
@@ -284,7 +302,7 @@ document.getElementById("brac-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Brac Helpline 16445...");
@@ -315,7 +333,7 @@ document.getElementById("railway-help-btn")
         e.preventDefault();
 
         const coinBtn = document.getElementById("coin-btn");
-        const coinInnerTextNumber = coinInnerTextValue("coin-btn");
+        const coinInnerTextNumber = elementInnerTextValue("coin-btn");
 
         if (coinInnerTextNumber >= coins) {
             alert("📞 Calling Bangladesh Railway Helpline 163...");
@@ -338,4 +356,173 @@ document.getElementById("railway-help-btn")
         callHistoryData.push(data)
         callHistory();
     })
+
+// Copy BTNs Function s
+
+// Copy btn main function (Police)
+const policeNumber = 999;
+
+document.getElementById("police-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(policeNumber.toString())
+
+        alert("✔️ Number copied successfully: 999")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (fire)
+const fireNumber = 999;
+
+document.getElementById("fire-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(fireNumber.toString())
+
+        alert("✔️ Number copied successfully: 999")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (National)
+const nationalNumber = 999;
+
+document.getElementById("national-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(nationalNumber.toString())
+
+        alert("✔️ Number copied successfully: 999")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (Ambulance)
+const ambulanceNumber = 1994999999;
+
+document.getElementById("ambulance-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(ambulanceNumber.toString())
+
+        alert("✔️ Number copied successfully: 1994-999999...")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (Child)
+const childNumber = 109;
+
+document.getElementById("child-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(childNumber.toString())
+
+        alert("✔️ Number copied successfully: 109")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (Corruption)
+const corruptionNumber = 106;
+
+document.getElementById("corruption-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(corruptionNumber.toString())
+
+        alert("✔️ Number copied successfully: 106")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (electricity)
+const electricityeNumber = 16216;
+
+document.getElementById("electricity-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(electricityeNumber.toString())
+
+        alert("✔️ Number copied successfully: 16216")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+
+// Copy btn main function (brac)
+const bracNumber = 16445;
+
+document.getElementById("brac-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(bracNumber.toString())
+
+        alert("✔️ Number copied successfully: 16445")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+// Copy btn main function (railway)
+const railwayNumber = 163;
+
+document.getElementById("railway-copy-btn")
+    .addEventListener('click', function () {
+
+
+        const copyShowBtn = document.getElementById("copy-show-btn");
+        const copyShowBtnInnerText = elementInnerTextValue("copy-show-btn");
+
+        navigator.clipboard.writeText(railwayNumber.toString())
+
+        alert("✔️ Number copied successfully: 163")
+        newCopyShowInnerValue = copyShowBtnInnerText + copyBtnValue;
+        copyShowBtn.innerText = newCopyShowInnerValue;
+
+    })
+
+
+
+
 

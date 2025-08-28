@@ -39,7 +39,7 @@
             <div class="flex items-center gap-3">
                 <div
                     class="flex items-center justify-center gap-1 bg-green-100 px-2 py-1 rounded-full text-xl h-[40px] w-[80px]">
-                    <span class="bold">0</span>
+                    <span id="heart-show-btn" class="bold">0</span>
                     <img class="h-[25px] w-[25px]" src="assets/heart.png" alt="">
                 </div>
 
@@ -51,7 +51,7 @@
 
                 <div
                     class=" flex items-center justify-center gap-5 h-[40px] w-[80px] bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    <h1><span class="mr-1">0</span>Copy</h1>
+                    <h1><span id="copy-show-btn" class="mr-1 text-">0</span>Copy</h1>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
                 <div class="h-[300px] w-[320px] bg-white rounded-lg shadow-md p-5">
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-3 bg-[#FFE3E2] rounded-2xl" src="./assets/police.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Police Helpline Number</h1>
@@ -92,8 +92,8 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">All</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
-                            class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
+                        <button id="police-copy-btn"
+                            class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold "><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="police-call-btn"
                             class="btn h-[35px] w-[135px] bg-[#00A63E] hover:bg-[#0c7c35] border-[#D4D6D5] rounded-lg text-white font-semibold gap-2 call-button"><i
@@ -105,7 +105,7 @@
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-3 bg-[#FFE3E2] rounded-2xl" src="./assets/fire-service.png"
                             alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Fire Service Number</h1>
@@ -114,7 +114,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Police</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="fire-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="fire-service-btn"
@@ -126,7 +126,7 @@
                 <div class="h-[300px] w-[320px] bg-white rounded-lg shadow-md p-5">
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-3 bg-[#FFE3E2] rounded-2xl" src="./assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 "></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">National Emergency Number</h1>
@@ -135,7 +135,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Fire</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="national-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="national-emergency-btn"
@@ -147,7 +147,7 @@
                 <div class="h-[300px] w-[320px] bg-white rounded-lg shadow-md p-5">
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-3 bg-[#FFE3E2] rounded-2xl" src="./assets/ambulance.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Ambulance Service</h1>
@@ -156,7 +156,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Health</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="ambulance-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="ambulance-btn"
@@ -168,7 +168,7 @@
                 <div class="h-[300px] w-[320px] bg-white rounded-lg shadow-md p-5">
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-3 bg-[#FFE3E2] rounded-2xl" src="./assets/emergency.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Women & Child Helpline</h1>
@@ -177,7 +177,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Help</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="child-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="child-help-btn"
@@ -190,7 +190,7 @@
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-3 bg-[#FFE3E2] rounded-2xl" src="./assets/Anti-Corruption.svg"
                             alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Anti-Corruption Helpline</h1>
@@ -199,7 +199,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Govt.</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="corruption-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="corruption-btn"
@@ -212,7 +212,7 @@
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-1 bg-[#FFE3E2] rounded-2xl"
                             src="./assets/Electricity Helpline.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Electricity Helpline</h1>
@@ -221,7 +221,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Electricity</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="electricity-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="electricity-btn"
@@ -233,7 +233,7 @@
                 <div class="h-[300px] w-[320px] bg-white rounded-lg shadow-md p-5">
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-1 bg-[#FFE3E2] rounded-2xl" src="./assets/NGO.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Brac Helpline</h1>
@@ -242,7 +242,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">NGO</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="brac-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="brac-btn"
@@ -255,7 +255,7 @@
                     <div class="flex items-center justify-between">
                         <img class="h-[50px] w-[50px] p-2 bg-[#FFE3E2] rounded-2xl"
                             src="./assets/Bangladesh-Railway.png" alt="">
-                        <i class="fa-regular fa-heart cursor-pointer text-gray-500"></i>
+                        <i class="fa-regular fa-heart cursor-pointer text-gray-500 heart-btn"></i>
                     </div>
                     <div class=" ">
                         <h1 class="font-bold text-lg mt-5">Bangladesh Railway Helpline </h1>
@@ -264,7 +264,7 @@
                         <span class="bg-gray-200 px-2 py-1 rounded-full text-gray-500">Travel</span>
                     </div>
                     <div class="mt-4 flex gap-1.5 justify-center">
-                        <button
+                        <button id="railway-copy-btn"
                             class="btn h-[35px] w-[135px] bg-white hover:bg-gray-100 border-2 border-[#D4D6D5] rounded-lg text-gray-600 font-semibold"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
                         <button id="railway-help-btn"
